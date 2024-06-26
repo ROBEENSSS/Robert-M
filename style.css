@@ -1,0 +1,109 @@
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main.people {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Адаптивні стилі */
+@media (min-width: 500px) {
+  main.people {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 750px) {
+  main.people {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  main.people {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1500px) {
+  main.people {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.photo {
+  position: relative;
+  margin-right: 1rem;
+  width: 200px;
+  height: 231px;
+  border-radius: 10%;
+}
+
+.photo:hover {
+  background-color: #EEEEEE
+}
+
+.photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  object-fit: cover;
+}
+
+.rank {
+  position: absolute;
+  top: 38%;
+  right: 5%;
+  background: #ffffff;
+  color: #8B0000;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+.name {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  height: 23px;
+  width: 175px;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #2F4F4F;
+}
+
+.extra {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.sport {
+  color: #666;
+}
+
+.pay {
+  font-weight: bold;
+}
